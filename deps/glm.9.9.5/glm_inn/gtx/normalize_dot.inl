@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /// @ref gtx_normalize_dot
 
 namespace glm
@@ -14,3 +15,21 @@ namespace glm
 		return glm::dot(x, y) * glm::fastInverseSqrt(glm::dot(x, x) * glm::dot(y, y));
 	}
 }//namespace glm
+=======
+/// @ref gtx_normalize_dot
+
+namespace glm
+{
+	template<length_t L, typename T, qualifier Q>
+	GLM_FUNC_QUALIFIER T normalizeDot(vec<L, T, Q> const& x, vec<L, T, Q> const& y)
+	{
+		return glm::dot(x, y) * glm::inversesqrt(glm::dot(x, x) * glm::dot(y, y));
+	}
+
+	template<length_t L, typename T, qualifier Q>
+	GLM_FUNC_QUALIFIER T fastNormalizeDot(vec<L, T, Q> const& x, vec<L, T, Q> const& y)
+	{
+		return glm::dot(x, y) * glm::fastInverseSqrt(glm::dot(x, x) * glm::dot(y, y));
+	}
+}//namespace glm
+>>>>>>> f8aea6f7d63dae77b8d83ba771701e3561278dc4
