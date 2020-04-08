@@ -1,0 +1,17 @@
+*.DS_Store
+*/.DS_Store
+*DailyLog
+ud.sh
+ur.sh
+excels/
+/.vscode
+/build/
+/old/
+/regularOut/
+/obj/
+
+# Visual Studio
+.vs/
+CMakeSettings.json
+Docs/pngs/win10/check_clang_and_cmke.png
+out/
